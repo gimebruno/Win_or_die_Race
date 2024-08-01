@@ -1948,7 +1948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 813501099}
+      - m_Target: {fileID: 519420033}
         m_TargetAssemblyTypeName: Salir, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
@@ -2765,6 +2765,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: CamaraPlayer1
   m_TagString: MainCamera
@@ -2846,6 +2847,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9d23f0f93556f45beef53a7e698ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &523822547
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,8 +4680,6 @@ GameObject:
   m_Component:
   - component: {fileID: 813501098}
   - component: {fileID: 813501097}
-  - component: {fileID: 813501099}
-  - component: {fileID: 813501100}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -4706,30 +4717,6 @@ Transform:
   - {fileID: 1382183760}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &813501099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813501096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c9d23f0f93556f45beef53a7e698ed7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &813501100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813501096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c9d23f0f93556f45beef53a7e698ed7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &863561120
 GameObject:
   m_ObjectHideFlags: 0
