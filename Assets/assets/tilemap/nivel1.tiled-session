@@ -1,0 +1,159 @@
+{
+    "activeFile": "nivel1.json",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "#lava": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Agustin/Desktop/programacion/win-or-die/public/assets/atlas/atlas-lava.json": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Agustin/Desktop/programacion/win-or-die/public/assets/atlas/atlas-lava.tsj": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Agustin/Desktop/programacion/win-or-die/public/assets/atlas/test.json": {
+            "scaleInDock": 1
+        },
+        "atlas-lava.tsx": {
+            "scaleInDock": 1
+        },
+        "nivel1 - copia.tmx": {
+            "scale": 0.1603125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 184.01559454191033,
+                "y": 3867.446393762183
+            }
+        },
+        "nivel1 - copia.tmx#atlas-lava": {
+            "scaleInDock": 1
+        },
+        "nivel1.json": {
+            "expandedObjectLayers": [
+                6
+            ],
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 14,
+                "y": 4056
+            }
+        },
+        "nivel1.json#atlas-lava": {
+            "scaleInDock": 0.33
+        },
+        "nivel1.json#background": {
+            "scaleInDock": 1
+        },
+        "nivel1.tmj": {
+            "scale": 0.5351171874999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640.0467187385942,
+                "y": 368.1436601211768
+            }
+        },
+        "nivel1.tmj#atlas-lava": {
+            "scaleInDock": 1
+        },
+        "nivel1.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 474.24242424242436,
+                "y": 2118.181818181818
+            }
+        },
+        "nivel1.tmx#atlas-lava": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "nivel1.tmx#atlas-lava2": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "nivel1.tmx#test": {
+            "scaleInEditor": 1
+        },
+        "nivel2.json": {
+            "expandedObjectLayers": [
+                6
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1594.3333333333333,
+                "y": 2394
+            }
+        },
+        "nivel2.json#atlas-lava": {
+            "scaleInDock": 1
+        },
+        "nivel2.json#background": {
+            "scaleInDock": 1
+        },
+        "nivel3.json": {
+            "expandedObjectLayers": [
+                6
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1594.3333333333333,
+                "y": 2394
+            }
+        },
+        "nivel3.json#atlas-lava": {
+            "scaleInDock": 1
+        },
+        "nivel3.json#background": {
+            "scaleInDock": 1
+        },
+        "nivel4.json": {
+            "expandedObjectLayers": [
+                6
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1594.3333333333333,
+                "y": 2394
+            }
+        },
+        "nivel4.json#atlas-lava": {
+            "scaleInDock": 1
+        },
+        "nivel4.json#background": {
+            "scaleInDock": 1
+        },
+        "prueba.tmj": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 415,
+                "y": 564
+            }
+        },
+        "prueba.tmj#lava": {
+            "scaleInDock": 1
+        }
+    },
+    "openFiles": [
+        "nivel1.json"
+    ],
+    "project": "nivel1.tiled-project",
+    "recentFiles": [
+        "nivel1.tmx",
+        "nivel1 - copia.tmx",
+        "nivel1.tmj",
+        "prueba.tmj"
+    ]
+}
