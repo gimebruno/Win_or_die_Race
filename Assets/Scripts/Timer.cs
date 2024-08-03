@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement; // Asegúrate de incluir este namespace
 
 public class Timer : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                LoadEndRoundScreen(); // Llama a la función para cargar la pantalla de fin de ronda
             }
         }
     }
@@ -41,5 +43,9 @@ public class Timer : MonoBehaviour
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-}
 
+    void LoadEndRoundScreen()
+    {
+        SceneManager.LoadScene("FinRonda");
+    }
+}
