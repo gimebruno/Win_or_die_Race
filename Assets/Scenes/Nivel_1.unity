@@ -1286,6 +1286,9 @@ GameObject:
   m_Component:
   - component: {fileID: 251152392}
   - component: {fileID: 251152391}
+  - component: {fileID: 251152395}
+  - component: {fileID: 251152394}
+  - component: {fileID: 251152393}
   m_Layer: 0
   m_Name: Jugador1
   m_TagString: Untagged
@@ -1360,6 +1363,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &251152393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251152390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a3558463159da4696f7bc2b39f864e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 7
+  deceleration: 3
+  maxSpeed: 7
+  reverseSpeed: 3
+  rotationSpeed: 170
+  normalDriftFactor: 0.95
+  driftDriftFactor: 0.7
+  brakePower: 2
+  rb: {fileID: 251152394}
+  spriteRenderer: {fileID: 251152391}
+  straightSprite: {fileID: 21300000, guid: e350543bd6e76c747ada50024a9da25c, type: 3}
+  leftTurnSprite: {fileID: 21300000, guid: d2d4101fa7d336f4c9536562ecf3bee4, type: 3}
+  rightTurnSprite: {fileID: 21300000, guid: 377142d5b7fb07b4b99cb5e829b260c8, type: 3}
+--- !u!50 &251152394
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251152390}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &251152395
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251152390}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78, y: 1.26}
+    newSize: {x: 0.78, y: 1.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1.2}
+  m_EdgeRadius: 0
 --- !u!1 &254335394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,6 +3033,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: CamaraPlayer1
   m_TagString: MainCamera
@@ -3026,6 +3127,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9d23f0f93556f45beef53a7e698ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc330eb7f4e3e534b870e558c24f2f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 251152392}
+  smoothSpeed: 99
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &523822547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,6 +3444,7 @@ GameObject:
   - component: {fileID: 579911396}
   - component: {fileID: 579911395}
   - component: {fileID: 579911394}
+  - component: {fileID: 579911397}
   m_Layer: 0
   m_Name: CamaraPlayer2
   m_TagString: MainCamera
@@ -3409,6 +3526,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579911397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579911393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc330eb7f4e3e534b870e558c24f2f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2107685406}
+  smoothSpeed: 999
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &582280815
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,7 +7213,7 @@ Transform:
   m_GameObject: {fileID: 1321516002}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.00548, y: -7.2768764, z: -2.27}
+  m_LocalPosition: {x: 7.67, y: -7.2768764, z: -2.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11240,6 +11372,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2107685406}
   - component: {fileID: 2107685405}
+  - component: {fileID: 2107685409}
+  - component: {fileID: 2107685408}
+  - component: {fileID: 2107685407}
   m_Layer: 0
   m_Name: Jugador2
   m_TagString: Untagged
@@ -11314,6 +11449,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107685407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107685404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13ee41201c9c034487a39b9de233862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 7
+  deceleration: 3
+  maxSpeed: 7
+  reverseSpeed: 3
+  rotationSpeed: 170
+  normalDriftFactor: 0.95
+  driftDriftFactor: 0.7
+  brakePower: 2
+  rb: {fileID: 2107685408}
+  spriteRenderer: {fileID: 2107685405}
+  straightSprite: {fileID: 21300000, guid: f7a4fb49001f881458c9b24b79846539, type: 3}
+  leftTurnSprite: {fileID: 21300000, guid: 5ccba503f09b837499e308c9c5f391e3, type: 3}
+  rightTurnSprite: {fileID: 21300000, guid: 276eb4557112ad64c8809973eb678792, type: 3}
+--- !u!50 &2107685408
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107685404}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &2107685409
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107685404}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78, y: 1.26}
+    newSize: {x: 0.78, y: 1.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1.2}
+  m_EdgeRadius: 0
 --- !u!1 &2128803722
 GameObject:
   m_ObjectHideFlags: 0
