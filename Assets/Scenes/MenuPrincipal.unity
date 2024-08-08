@@ -455,7 +455,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Nivel_1
+          m_StringArgument: Seleccion
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &416281184
@@ -1353,6 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9d23f0f93556f45beef53a7e698ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pausaMenu: {fileID: 0}
 --- !u!4 &1305443042
 Transform:
   m_ObjectHideFlags: 0
