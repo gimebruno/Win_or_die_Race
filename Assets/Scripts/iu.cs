@@ -17,11 +17,19 @@ public class Boton : MonoBehaviour
         }
     }
 
-    void Update()
+public GameObject pausaMenu;
+    public void pausa()
     {
-
+       pausaMenu.SetActive(true);
+       Time.timeScale = 0; 
     }
 
+    public void reanudar()
+    {
+       pausaMenu.SetActive(false);
+       Time.timeScale = 1; 
+    }
+    
     // Función para salir del juego
     public void Exit()
     {
